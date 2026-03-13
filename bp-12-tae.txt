@@ -1,0 +1,65 @@
+// Exercise #1: Food Order
+
+// Start coding here
+const foodOrder = {
+    orderNumber: "A0234" ,
+    address: 'bangkok' ,
+    paymentType: 'Cash' ,
+    totalPrice: 4500 ,
+    restaurantName: 'MK' ,
+    
+}
+foodOrder['totalPrice'] = 5000 ;
+foodOrder.paymentType = 'Credit Card'
+console.log (foodOrder)
+
+
+// Exercise #2 Product
+
+const product = {
+  name: "Xiaomi Air Purifier",
+  price: 4000,
+  ratings: 2.5,
+  photo: null,
+};
+let socialMediaShare = "facebookShare";
+// Start code here
+product.ratings = 4.5 ;
+product.code = "IT0101010" ;
+product.photo ="https://i01.appmifile.com/webfile/globalimg/products/pc/mi-air-purifier-3H/replace_03.jpg";
+product.price = 6000
+delete product.ratings ;
+product[socialMediaShare] = 'socialMediaShare';
+
+console.log(product)
+
+
+// Exercise #3 Debugging
+
+// Start coding here
+const employee = {
+  name: "John Doe",
+  age: 18,
+  address: {
+    street: "123 Main Street",
+    city: "Cityville",
+    states: "Stateville",
+    country: "Countryland",
+    postalCode: "12345",
+  },
+};
+
+console.log("Employee Name: " + employee.name);
+console.log("Employee Age: " + employee.age);
+console.log(
+  "Employee Address: " +
+    employee.address.street +
+    ", " +
+    employee.address.city +
+    ", " +
+    employee.address.states +
+    ", " +
+    employee.address.country +
+    ", " +
+    employee.address.postalCode
+);
